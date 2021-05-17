@@ -144,9 +144,11 @@ export default {
     // 查询banner数据
     getBannerList() {
       banner.getListBanner()
-        .then(response =>  {
+        .then(response => {
+          console.log(response)
           this.bannerList = response.data.data.list
-        })
+          console.log(response)
+        });
     },
     // 查询热门课程和名师
     getHotCourseTeacher() {
